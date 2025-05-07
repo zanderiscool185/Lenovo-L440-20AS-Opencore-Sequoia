@@ -9,3 +9,8 @@ This is a followup and a update to my other repo: https://github.com/zanderiscoo
 Much Love, and happy hacking.
 PS. as much as i love this laptop, i think this genuinely might be the last macOS version to run on this, as its starting to take 20+ seconds to  boot (Vanilla install no apps,aka Fresh).
 i hope this helps, also maybe this might address some of the come issues others mentioned, like No Displayport (STILL DOESNT WORK, Thats a Graphics Issue, you either get good graphics, or displayport, not both) and some issue with audio buzzing (havent tested)
+
+
+How to use:
+download EFI (either the prepackaged, or the EFI from this repo, rename the folder to "EFI" and copy to Drive
+boom, success!
