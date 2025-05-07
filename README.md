@@ -1,2 +1,11 @@
 # Lenovo-L440-20AS-Opencore-Sequoia
 A EFI that's been updated to work with macOS 15 on the Thinkpad L440 
+Woo! ive updated opencore to 1.0.4! its now ready to go! 
+ive attached both a 7z and a self extracting ZIP file with the EFI, that way you can "drag and drop" and go
+theres a PCI in the config thats disabled (has this symbol #), ONLY uncomment it IF you have the intel 7260 Wifi Card (Use it to get Opencore Legacy Patcher to give you an option for Modern Wireless Root Patch, alongside the Intel:Haswell Root Patch)
+This EFI SUPPORTS WIRELESS IN RECOVERY MODE! WOO! So you can use the recovery to install macOS with Wifi AND ethernet 
+little fun quirk, The WiFi password is stored in NVRAM, as its autoconnected in both macOS, and recovery on its own!
+This is a followup and a update to my other repo: https://github.com/zanderiscool185/Lenovo-L440-20AS-Opencore-Sonoma
+Much Love, and happy hacking.
+PS. as much as i love this laptop, i think this genuinely might be the last macOS version to run on this, as its starting to take 20+ seconds to  boot (Vanilla install no apps,aka Fresh).
+i hope this helps, also maybe this might address some of the come issues others mentioned, like No Displayport (STILL DOESNT WORK, Thats a Graphics Issue, you either get good graphics, or displayport, not both) and some issue with audio buzzing (havent tested)
