@@ -14,3 +14,5 @@ i hope this helps, also maybe this might address some of the come issues others 
 How to use:
 download EFI (either the prepackaged, or the EFI from this repo, rename the folder to "EFI" and copy to Drive
 boom, success!
+
+Ive added the EFI as well as pre-packaged, as not everyone has windows 11 and not everyone has 7z, the folder is the original, if you download the packages and they dont match the repo, DO NOT USE! (the folder names are different, but if the files arent the same, please be careful!)
