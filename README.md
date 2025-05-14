@@ -12,9 +12,22 @@ i hope this helps, also maybe this might address some of the come issues others 
 
 
 How to use:
-download EFI (either the prepackaged, or the EFI from this repo) rename the folder to "EFI" and copy to Drive
-boom, success!
+This is a two step process
+1. Copy EFI folder to USB and Boot installer (50/50 on if wifi works in recovery mode)
+2. Install macOS as normal
+3. Download Opencore Legacy Patcher and Opencore Auxiliary Tools (OCAT)
+4. Mount your EFI partition and Copy the folder to your EFI partiton on your SSD(PLEASE DONT USE HDDS!) Terminal Command: sudo diskutil mount /dev/diskXs1 (X = your disk! use diskutil list to find it!)
+5. THIS IS THE WIFI PATCH PART AND ONLY APPLIES TO THIS SPECIFC WIFI MODEL!
+6. copy the "Wifi Patch" into the EFI/OC/ and name it config.plist (GRAB THE CURRENT ONE AND RENAME TO configbak.plist)
+7. reboot and run Opencore Legacy Patcher and click "Post Install Root Patch" and it now should say "Intel Graphics Patch" and NOW ALSO A "Modern Wifi Patch"
+8. Run the patcher and let it finish, then reboot
+9. rename the file thats currently "config.plist" to FixWifiAfterUpdate.plist, and the "configbak.plist" back to config.plist
+10. Success! you should now have iMessage-Compatible Wifi Now!
 
+PS. WHEN YOU UPDATE, Redo steps 5-9 BEFORE opencore patcher reminds you about it, if you accidentally patch, no worries! you can re-patch again, but have the Modern wifi patch added as well!
+
+Sidenote, Updated perfectly fine from 15.4.1 to 15.5, other than the wifi patch, updated like normal, No Delta Updates tho (for those who dont know, delta updates are smaller updates, usually 1-2 GB, but when updating, it downloads a FULL OS IMAGE! so make sure you have the bandwidth!)
+ 
 Ive added the EFI as well as pre-packaged, as not everyone has windows 11 and not everyone has 7z, the folder is the original, if you download the packages and they dont match the repo, DO NOT USE! (the folder names are different, but the files themselves will match)
 
 
